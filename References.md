@@ -11,6 +11,9 @@
    - 3편: [Link](https://covenant.tistory.com/143)
      - 자료구조: 순열/조합, 빈도 계산, 힙, 덱, 우선순위 큐
 
-**2. 코딩테스트 완전정복 (Python)**
+**2. 이것이 코딩 테스트다 (Python)**
+   - BFS: [Link](https://freedeveloper.tistory.com/373)
+
+**3. 코딩테스트 완전정복 (Python)**
    - 1편 BFS: [Link](https://velog.io/@sihoon_cho/Python%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%99%84%EC%A0%84%EC%A0%95%EB%B3%B5-BFS-%EB%84%88%EB%B9%84%EC%9A%B0%EC%84%A0%ED%83%90%EC%83%89)
    - 2편 DFS: [Link](https://velog.io/@sihoon_cho/Python%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%99%84%EC%A0%84%EC%A0%95%EB%B3%B5-DFS-%EA%B9%8A%EC%9D%B4%EC%9A%B0%EC%84%A0%ED%83%90%EC%83%89)
