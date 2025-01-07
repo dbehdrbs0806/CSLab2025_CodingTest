@@ -1,7 +1,7 @@
 # CSLab2025_CodingTest
 **CSLab 코테 스터디 자료공유**
 
-###📰 **자료 목록**
+### 📰 자료 목록
 ---
 **1. 용감하게 시작하는 코딩테스트 (Python)**
    - 1편: [Link](https://covenant.tistory.com/141)
