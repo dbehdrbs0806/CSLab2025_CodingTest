@@ -32,6 +32,10 @@ Baekjoon #2644 촌수계산
         - 귀찮다고 flag를 늘리지 말고 알고리즘 자체의 문제를 찾아야 함
     - 뭔가 같은 스텝에 추가된 값에 대해선 length를 증가시키지 않게 하면 될 것 같은데,,, 그러려고 뭔가 더 넣고 싶진 않다
         - 현재 아이템을 빼고(popleft)난 후에 큐가 비어있는 경우에만 length를 증가 < 안됨, 그야 당연히... 꼭 마지막 경우 쪽으로만 가진 않으니까,,,
+    - 챗지피티 힌트) 최상위 조상
+        - 한 아이템에서 다른 아이템까지로 탐색하는 게 아니라, 각 아이템의 최상위 조상을 찾고 그 경로를 비교하면 된다
+        - 그러면 BFS에서 너무 멀어지지 않나?
+        - 다시 굴려봄) 큐에 사람하고 거리 정보를 둘 다 저장해서 계산... 이게 더 깔끔하긴 한듯 < 일어나서 수정해보기
 """
 
 from collections import deque
@@ -46,7 +50,7 @@ for _ in range(n):
     p, c = map(int, input().split())
     parent[c-1] = p
 
-deq = deque([a])
+deq = deque([(a, 0)])
 visited[a-1] = True
 length = 0
 flag = False
@@ -69,5 +73,5 @@ while deq:
             deq.append(i+1)
             visited[i] = True
     if flag: break
-    
+
 print(length+1 if flag else -1)
