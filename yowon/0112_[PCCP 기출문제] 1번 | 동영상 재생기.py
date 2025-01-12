@@ -18,7 +18,7 @@ def solution(video_len, pos, op_start, op_end, commands):
     # 입력된 시간들을 초 단위로 변환
     video_len, pos, op_start, op_end = map(str2sec, [video_len, pos, op_start, op_end])
 
-    # 초기 위치에서 오프닝 구간 확인
+    # 시작 위치에서 오프닝 구간 확인
     pos = skip(pos)
 
     for command in commands:
