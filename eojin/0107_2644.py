@@ -34,44 +34,45 @@ Baekjoon #2644 촌수계산
         - 현재 아이템을 빼고(popleft)난 후에 큐가 비어있는 경우에만 length를 증가 < 안됨, 그야 당연히... 꼭 마지막 경우 쪽으로만 가진 않으니까,,,
     - 챗지피티 힌트) 최상위 조상
         - 한 아이템에서 다른 아이템까지로 탐색하는 게 아니라, 각 아이템의 최상위 조상을 찾고 그 경로를 비교하면 된다
-        - 그러면 BFS에서 너무 멀어지지 않나?
-        - 다시 굴려봄) 큐에 사람하고 거리 정보를 둘 다 저장해서 계산... 이게 더 깔끔하긴 한듯 < 일어나서 수정해보기
+            - 그러면 BFS에서 너무 멀어지지 않나?
+    - 다시 굴려봄) 큐에 사람하고 거리 정보를 둘 다 저장해서 계산... < 이거 된다
+        - 구현하면서 틀렸던 거
+            - 인덱스( 찾아보니 0-based / 1-based를 혼용해서 써서 그렇다고 함... 앞으로는 입력 받을 때부터 0-based로 고쳐 받는 게 좋을듯)
+            - python 문법상 != 보다는 is not이나 not을 쓰는 게 좀 더 익숙해지면 좋을듯 (가독성이 좀 더 좋아진다)
 """
-
 from collections import deque
 
-allp = int(input())
-a, b = map(int, input().split())
-n = int(input())
+allp = int(input()) # 전체 사람 수
+a, b = map(int, input().split()) # 촌수를 계산해야 하는 각각의 사람 번호
+n = int(input()) # 부모 자식들 간의 관계의 개수
 parent = [None] * allp
-visited = [False] * allp
 
 for _ in range(n):
     p, c = map(int, input().split())
     parent[c-1] = p
 
 deq = deque([(a, 0)])
+visited = [False] * allp
 visited[a-1] = True
-length = 0
-flag = False
+length = None
+
 while deq:
-    curr = deq.popleft()
-    if not deq: length += 1
-    # curr의 부모 검사
-    if not (visited[parent[curr-1]-1] if parent[curr-1]!=None else True):
+    curr, dist = deq.popleft()
+    # 부모 검사
+    if not (visited[parent[curr-1]-1] if parent[curr-1] is not None else True):
         if parent[curr-1] == b:
-            flag = True
+            length = dist + 1
             break
-        deq.append(parent[curr-1])
+        deq.append((parent[curr-1], dist+1))
         visited[parent[curr-1]-1] = True
-    # curr의 자식 검사
+    # 자식 검사
     for i in range(allp):
         if parent[i] == curr and (not visited[i]):
-            if i+1 == b:
-                flag = True
+            if i == b - 1:
+                length = dist + 1
                 break
-            deq.append(i+1)
+            deq.append((i+1, dist+1))
             visited[i] = True
-    if flag: break
+    if length is not None: break
 
-print(length+1 if flag else -1)
+print(length if length is not None else -1)
