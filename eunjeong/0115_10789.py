@@ -13,3 +13,6 @@ for i in range(5):
     if (len(word_list[i])>max):
         max = len(word_list)
 print(max)
+for i in range(len()):
+    for j in range(5):
+        print(i, j)
