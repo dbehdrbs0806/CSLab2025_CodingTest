@@ -17,3 +17,11 @@
 **3. 코딩테스트 완전정복 (Python)**
    - 1편 BFS: [Link](https://velog.io/@sihoon_cho/Python%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%99%84%EC%A0%84%EC%A0%95%EB%B3%B5-BFS-%EB%84%88%EB%B9%84%EC%9A%B0%EC%84%A0%ED%83%90%EC%83%89)
    - 2편 DFS: [Link](https://velog.io/@sihoon_cho/Python%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%99%84%EC%A0%84%EC%A0%95%EB%B3%B5-DFS-%EA%B9%8A%EC%9D%B4%EC%9A%B0%EC%84%A0%ED%83%90%EC%83%89)
+
+---
+**1. 자바 코딩테스트 기본 준비 (java)**
+   - java 코딩테스트 함수 사용: [Link](https://velog.io/@hyunsoo730/%EC%9E%90%EB%B0%94-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B8%B0%EB%B3%B8-%EC%A4%80%EB%B9%84)
+     
+---
+**1. 코딩테스트 문제 추천**
+   - 코딩테스트 대비를 위한 백준 문제 추천: [Link](https://covenant.tistory.com/224)
