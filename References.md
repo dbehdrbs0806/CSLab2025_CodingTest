@@ -23,5 +23,5 @@
    - java 코딩테스트 함수 사용: [Link](https://velog.io/@hyunsoo730/%EC%9E%90%EB%B0%94-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B8%B0%EB%B3%B8-%EC%A4%80%EB%B9%84)
      
 ---
-**1. 코딩테스트 문제 추천**
+**코딩테스트 문제 추천**
    - 코딩테스트 대비를 위한 백준 문제 추천: [Link](https://covenant.tistory.com/224)
