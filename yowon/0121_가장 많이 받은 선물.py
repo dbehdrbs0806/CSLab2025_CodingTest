@@ -15,7 +15,7 @@ def solution(friends, gifts):
         gift_counts[receiver]['received'] += 1
         gift_table[giver][receiver] += 1
 
-    # 친구별 선물 지수 계산 (준 선물 - 받은 선물)
+    # 친구별 선물 지수 계산 (준 선물 - 받은 선물)  
     gift_indices = {friend: gift_counts[friend]['given'] - gift_counts[friend]['received'] for friend in friends}
 
     # 다음 달 선물 받을 횟수 계산
