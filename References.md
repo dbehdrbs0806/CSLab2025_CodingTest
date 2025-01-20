@@ -25,3 +25,4 @@
 ---
 **코딩테스트 문제 추천**
    - 코딩테스트 대비를 위한 백준 문제 추천: [Link](https://covenant.tistory.com/224)
+   - 백준 코딩테스트 초보 추천 문제 모음: [Link](https://codingdodo.tistory.com/94)
