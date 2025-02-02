@@ -118,4 +118,5 @@ print()
 tree.in_order(root)
 print()
 tree.post_order(root)
+
 # 클래스 내에서 재귀 함수 사용 시 시간 매우 단축 가능
