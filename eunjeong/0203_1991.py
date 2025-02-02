@@ -1,4 +1,5 @@
 # 문제 설명
+# 문제 링크: https://www.acmicpc.net/problem/1991
 # 전위, 중위, 후위 순회 결과 출력
 '''
 num = int(input())
